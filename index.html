@@ -9,38 +9,47 @@
     </head>
     <body>
        <main>
-           <nav>
-               <div id="logo">
-                   <h2>Game Mania - Uma Explosão de preços baixos </h2>
-                   <img src="img/produtos/gamemanialogo-branco.png">
-               </div>
-               <div id="menu">
-                   <ul>
-                       <li><a href="#">Home</a></li>
-                       <li><a href="#">Gamers</a></li>
-                       <li><a href="#">Acessórios</a></li>
-                       <li><a href="#">Ofertas</a></li>
-                   </ul>
-               </div>
-               <div id="busca">
-                   <form>
-                       <input type="search" placeholder="Buscar Produto">
-                       <button type="button">Buscar</button>
-                   </form>
-               </div>
-           </nav>
-           <div id="container">
+            <header class="container-header">
+                
+                    <div class="logo item-header">
+                        
+                        <img src="img/produtos/gamemanialogo-branco.png">
+                    </div>
+
+                        <nav class="menu item-header">
+                            
+                                <ul>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Gamers</a></li>
+                                    <li><a href="#">Acessórios</a></li>
+                                    <li><a href="#">Ofertas</a></li>
+                                </ul>
+                            
+                        </nav>    
+
+                    <div class="busca item-header">
+                        <form>
+                            <input type="search" placeholder="Buscar Produto">
+                            <button type="button">Buscar</button>
+                        </form>
+                    </div>
+                
+            </header>    
+
+             <!-- Area de destaque - Banner e ofertas-->
                <section class="destaque">
                  <h2>Confira nossos destaques</h2>
                  <div id="destaque-banner">
                       <img src="img/produtos/destaques.png">
                  </div>
                </section>
+               <!-- FIM  area de destaque - Banner e ofertas-->
+
                <section class="produtos-em-alta">
-                  <h2>Produtos em Alta !</h2>
+                 
                   <div id="filtro-1">
-                      <form>
-                          Filtrar Por: 
+                      <form class="filtro-produtos">
+                          <strong>  Filtrar Por: </strong> 
                           <select id="filtro">
                             <option value="menor">Menor Preço</option>
                             <option value="maior">Maior Preço</option>
@@ -48,104 +57,178 @@
                             <option value="audi">Mais Vendidos</option>
                           </select>
                           <button type="button"> OK </button>
-                          <hr>
+                        
                       </form>
                   </div>
-                  <!-- Inicio Produtos -->
-                  <div class="produto">
-                      Produto 
-                      <h3>Nome produtos </h3>
-                      <p>Código Produto: #rere</p>
-                      <img src="img/produtos/produto_1.png" alt="Imagem produto"/>
-                      <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                           Perferendis, consectetur pariatur doloribus
-                           enim porro consequuntur earum dele
-                      </p>
-                      <button type="button" class="btnComprar">Comprar</button>
-                       
-                  </div>
+                </section>
+                <section class="container-produto">
 
-
-                  <!-- <div class="produto">
-                    Produto 
-                    <h3>Nome produtos </h3>
-                    <p>Código Produto: #rere</p>
-                    <img src="img/produtos/produto_1.png" alt="Imagem produto"/>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                         Perferendis, consectetur pariatur doloribus
-                         enim porro consequuntur earum dele
-                    </p>
-                    <button type="button" class="btnComprar">Comprar</button>
-                     
-                    <div class="produto">
-                        Produto 
-                        <h3>Nome produtos </h3>
-                        <p>Código Produto: #rere</p>
-                        <img src="img/produtos/produto_1.png" alt="Imagem produto"/>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                             Perferendis, consectetur pariatur doloribus
-                             enim porro consequuntur earum dele
-                        </p>
-                        <button type="button" class="btnComprar">Comprar</button>
-                       
-                        
-                        <div class="produto">
-                            Produto 
-                            <h3>Nome produtos </h3>
-                            <p>Código Produto: #rere</p>
-                            <img src="img/produtos/produto_1.png" alt="Imagem produto"/>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                 Perferendis, consectetur pariatur doloribus
-                                 enim porro consequuntur earum dele
-                            </p>
-                            <button type="button" class="btnComprar">Comprar</button>
-                       
                             
-                            <div class="produto">
+                         <div class="produto">
                                 Produto 
                                 <h3>Nome produtos </h3>
                                 <p>Código Produto: #rere</p>
                                 <img src="img/produtos/produto_1.png" alt="Imagem produto"/>
-                                <p>
+                                <p class="desc-produto">
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                     Perferendis, consectetur pariatur doloribus
-                                     enim porro consequuntur earum dele
+                                    Perferendis, consectetur pariatur doloribus
+                                    enim porro consequuntur earum dele
                                 </p>
-                                <button type="button" class="btnComprar">Comprar</button>
-                                 
-
-                                <div class="produto">
-                                    Produto 
-                                    <h3>Nome produtos </h3>
-                                    <p>Código Produto: #rere</p>
-                                    <img src="img/produtos/produto_1.png" alt="Imagem produto"/>
-                                    <p>
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                         Perferendis, consectetur pariatur doloribus
-                                         enim porro consequuntur earum dele
-                                    </p>
+                                <div class="btn-price">
+                                    <h3>R$ 2500,99</h3>
                                     <button type="button" class="btnComprar">Comprar</button>
-                       
-                                    
-                                    <div class="produto">
-                                        Produto 
-                                        <h3>Nome produtos </h3>
-                                        <p>Código Produto: #rere</p>
-                                        <img src="img/produtos/produto_1.png" alt="Imagem produto"/>
-                                        <p>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                             Perferendis, consectetur pariatur doloribus
-                                             enim porro consequuntur earum dele
-                                        </p>
-                                        <button type="button" class="btnComprar">Comprar</button> -->
-                                         
-                  <!-- Fim produtos -->
+                                </div>
 
-                  <footer>
+                             </div> 
+
+                             <div class="produto">
+                                Produto 
+                                <h3>Nome produtos </h3>
+                                <p>Código Produto: #rere</p>
+                                <img src="img/produtos/produto_1.png" alt="Imagem produto"/>
+                                <p class="desc-produto">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Perferendis, consectetur pariatur doloribus
+                                    enim porro consequuntur earum dele
+                                </p>
+                                <div class="btn-price">
+                                    <h3>R$ 2500,99</h3>
+                                    <button type="button" class="btnComprar">Comprar</button>
+                                </div>
+
+                             </div> 
+                             <div class="produto">
+                                Produto 
+                                <h3>Nome produtos </h3>
+                                <p>Código Produto: #rere</p>
+                                <img src="img/produtos/produto_1.png" alt="Imagem produto"/>
+                                <p class="desc-produto">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Perferendis, consectetur pariatur doloribus
+                                    enim porro consequuntur earum dele
+                                </p>
+                                <div class="btn-price">
+                                    <h3>R$ 2500,99</h3>
+                                    <button type="button" class="btnComprar">Comprar</button>
+                                </div>
+
+                             </div> 
+                             <div class="produto">
+                                Produto 
+                                <h3>Nome produtos </h3>
+                                <p>Código Produto: #rere</p>
+                                <img src="img/produtos/produto_1.png" alt="Imagem produto"/>
+                                <p class="desc-produto">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Perferendis, consectetur pariatur doloribus
+                                    enim porro consequuntur earum dele
+                                </p>
+                                <div class="btn-price">
+                                    <h3>R$ 2500,99</h3>
+                                    <button type="button" class="btnComprar">Comprar</button>
+                                </div>
+
+                             </div> 
+                             <div class="produto">
+                                Produto 
+                                <h3>Nome produtos </h3>
+                                <p>Código Produto: #rere</p>
+                                <img src="img/produtos/produto_1.png" alt="Imagem produto"/>
+                                <p class="desc-produto">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Perferendis, consectetur pariatur doloribus
+                                    enim porro consequuntur earum dele
+                                </p>
+                                <div class="btn-price">
+                                    <h3>R$ 2500,99</h3>
+                                    <button type="button" class="btnComprar">Comprar</button>
+                                </div>
+
+                             </div> 
+                             <div class="produto">
+                                Produto 
+                                <h3>Nome produtos </h3>
+                                <p>Código Produto: #rere</p>
+                                <img src="img/produtos/produto_1.png" alt="Imagem produto"/>
+                                <p class="desc-produto">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Perferendis, consectetur pariatur doloribus
+                                    enim porro consequuntur earum dele
+                                </p>
+                                <div class="btn-price">
+                                    <h3>R$ 2500,99</h3>
+                                    <button type="button" class="btnComprar">Comprar</button>
+                                </div>
+
+                             </div> 
+                             <div class="produto">
+                                Produto 
+                                <h3>Nome produtos </h3>
+                                <p>Código Produto: #rere</p>
+                                <img src="img/produtos/produto_1.png" alt="Imagem produto"/>
+                                <p class="desc-produto">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Perferendis, consectetur pariatur doloribus
+                                    enim porro consequuntur earum dele
+                                </p>
+                                <div class="btn-price">
+                                    <h3>R$ 2500,99</h3>
+                                    <button type="button" class="btnComprar">Comprar</button>
+                                </div>
+
+                             </div> 
+                             <div class="produto">
+                                Produto 
+                                <h3>Nome produtos </h3>
+                                <p>Código Produto: #rere</p>
+                                <img src="img/produtos/produto_1.png" alt="Imagem produto"/>
+                                <p class="desc-produto">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Perferendis, consectetur pariatur doloribus
+                                    enim porro consequuntur earum dele
+                                </p>
+                                <div class="btn-price">
+                                    <h3>R$ 2500,99</h3>
+                                    <button type="button" class="btnComprar">Comprar</button>
+                                </div>
+
+                             </div> 
+                             <div class="produto">
+                                Produto 
+                                <h3>Nome produtos </h3>
+                                <p>Código Produto: #rere</p>
+                                <img src="img/produtos/produto_1.png" alt="Imagem produto"/>
+                                <p class="desc-produto">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Perferendis, consectetur pariatur doloribus
+                                    enim porro consequuntur earum dele
+                                </p>
+                                <div class="btn-price">
+                                    <h3>R$ 2500,99</h3>
+                                    <button type="button" class="btnComprar">Comprar</button>
+                                </div>
+
+                             </div> 
+                             <div class="produto">
+                                Produto 
+                                <h3>Nome produtos </h3>
+                                <p>Código Produto: #rere</p>
+                                <img src="img/produtos/produto_1.png" alt="Imagem produto"/>
+                                <p class="desc-produto">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Perferendis, consectetur pariatur doloribus
+                                    enim porro consequuntur earum dele
+                                </p>
+                                <div class="btn-price">
+                                    <h3>R$ 2500,99</h3>
+                                    <button type="button" class="btnComprar">Comprar</button>
+                                </div>
+
+                             </div> 
+
+                               <!-- Fim produtos -->
+                </section>
+                 <footer>
                        
                        <div class="footer-1">
                         <h2>Redes Sociais</h2>
@@ -168,9 +251,9 @@
                             </label>
                             <button type="button"> Cadastrar </button>
                         </form>
-                    </div>
+                     </div>
 
-                    <div class="footer-1">
+                     <div class="footer-1">
                         <h2>Páginas Úteis</h2>
                          <ul>
                              <li><a href="sobre-nos.html">Sobre Nós</a></li>
@@ -178,11 +261,12 @@
                              <li><a href="onde-estamos.html">Onde Estamos</a></li>
                              <li><a href="onde-estamos.html">Contato</a></li>
                          </ul>
-                    </div>
-                       <center> Game Mania Todos os Direitos Reservados </center>
+                      </div>
+                      
+                       
                   </footer>
-               </section>
-           </div>
+               
+           
        </main>
     </body>
 </html>
